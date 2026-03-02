@@ -14,7 +14,7 @@ export default function Dashboard() {
   const [data, setData] = useState(null);
 
   const load = () =>
-    fetch("http://localhost:8000/metrics")
+    fetch("https://ai-powered-worker-productivity-dashboard-j1v5.onrender.com/metrics")
       .then(r => r.json())
       .then(setData);
 
