@@ -8,6 +8,14 @@ Base.metadata.create_all(bind=engine)
 
 app=FastAPI(title="AI Productivity Dashboard")
 
+@app.on_event("startup")
+def auto_seed():
+    db = SessionLocal()
+    try:
+        seed_data(db)
+    finally:
+        db.close()
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
