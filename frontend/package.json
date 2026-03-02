@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "type": "module",
 
-"scripts": {
-  "dev": "npx vite",
-  "start": "npx vite",
-  "build": "npx vite build",
-  "preview": "npx vite preview"
-}
+  "scripts": {
+    "dev": "npx vite",
+    "start": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview"
+  },
 
   "dependencies": {
     "react": "^18.2.0",
